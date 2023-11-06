@@ -20,7 +20,7 @@
   GLOBAL CONSTANT MACROS   
 *******************************************/
 
-
+typedef enum{START,INITState,LEDControlState}stateMachine;
 /******************************************
   GLOBAL FUNCTIONS MACROS 
 *******************************************/

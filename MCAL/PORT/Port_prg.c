@@ -48,8 +48,11 @@
   parameters (out) : none
   Return Value     : void
 ******************************************/
+extern stateMachine g_state;
+
 void Port_Init(const Port_ConfigType *ConfigPtr)
 {
+		g_state = INITState;
 
     if (ConfigPtr == NULL)
     {
