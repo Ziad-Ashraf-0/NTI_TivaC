@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\CONFIG;.\MCAL;.\LIB;.\MCAL\DIO\Inc;.\MCAL\IntCtrl\Inc;.\MCAL\PORT\Inc;.\HAL\BUTTON\Inc;.\HAL\LED\Inc</IncludePath>
+              <IncludePath>.\CONFIG;.\MCAL;.\LIB;.\MCAL\DIO\Inc;.\MCAL\IntCtrl\Inc;.\MCAL\PORT\Inc;.\HAL\BUTTON\Inc;.\HAL\LED\Inc;.\MCAL\SysTick\Inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -397,6 +397,11 @@
               <FileType>1</FileType>
               <FilePath>.\MCAL\DIO\Dio_prg.c</FilePath>
             </File>
+            <File>
+              <FileName>SysTick_prg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MCAL\SysTick\SysTick_prg.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -449,6 +454,11 @@
               <FileName>Button_Lcfg.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\CONFIG\Button_Lcfg.c</FilePath>
+            </File>
+            <File>
+              <FileName>SysTick_Lcfg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\CONFIG\SysTick_Lcfg.c</FilePath>
             </File>
           </Files>
         </Group>
