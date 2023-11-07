@@ -26,7 +26,7 @@
 /******************************************
   Global Data 
 *******************************************/   //
-const IntCtrl_ConfigType  IntCtrl_Config_Arr[INTCTRL_CONFIG_ARR_SIZE] = {{Bit_Timer_0A_32_64_IRQ, 1,0},{GPIO_Port_F_IRQ	, 2,0}};                                                                    	
+const IntCtrl_ConfigType  IntCtrl_Config_Arr[INTCTRL_CONFIG_ARR_SIZE] = {{SysTick_IRQ, 1,0}};                                                                    	
 	                                                                      
 
 

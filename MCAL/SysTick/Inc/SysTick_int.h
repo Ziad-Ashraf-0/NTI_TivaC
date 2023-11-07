@@ -14,6 +14,7 @@
 *******************************************/
 #include "Std_Types.h"
 #include "SysTick_Types.h"
+#include "SysTick_Cfg.h"
 
 /******************************************
   GLOBAL CONSTANT MACROS   
@@ -50,16 +51,56 @@
 // write function prototype here 
 
 /******************************************
-  syntax : Dio_WriteChannel
-  
-  Description :  this fn write high or low on selected pin 
-				
-  Synch/Asynch     : Synchrounse 
-  Reentrance       : Reentrant
-  parameters (in)  : channelID which is selected pin , level which is high or low
-  parameters (out) : N/A 
-  Return Value     : void   
+  Syntax: Systick_Init
+
+  Description: Initialize the Systick timer and configure the clock source.
+
+  Synchronous/Asynchronous: Synchronous
+  Reentrance: Reentrant
+  Parameters (In): clockSource - The clock source for the Systick timer (PIOCS_4 or FCPU).
+  Parameters (Out): N/A
+   Return Value: void
 ******************************************/
-// write function prototype here 
+void Systick_Init(const SysTick_ConfigType *ConfigPtr);
+
+/******************************************
+  Syntax: Systick_startTimer
+
+  Description: Start the Systick timer with a specified count.
+
+  Synchronous/Asynchronous: Synchronous
+  Reentrance: Reentrant
+  Parameters (In): count - The value to load into the Systick reload register.
+  Parameters (Out): N/A
+  Return Value: void
+******************************************/
+void Systick_startTimer(u32 count);
+
+/******************************************
+  Syntax: Systick_stopTimer
+
+  Description: Stop the Systick timer.
+
+  Synchronous/Asynchronous: Synchronous
+  Reentrance: Reentrant
+  Parameters (In): N/A
+  Parameters (Out): N/A
+  Return Value: void
+******************************************/
+void Systick_stopTimer();
+
+
+/******************************************
+  Syntax: Systick_setCallBack
+
+  Description: Set the callback function to be executed by the Systick interrupt handler.
+
+  Synchronous/Asynchronous: Synchronous
+  Reentrance: Reentrant
+  Parameters (In): ptrfn - A pointer to the callback function.
+  Parameters (Out): N/A
+  Return Value: void
+******************************************/
+void Systick_setCallBack(void (*ptrfn)(void));
 
 #endif

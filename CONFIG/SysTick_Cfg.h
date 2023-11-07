@@ -22,8 +22,6 @@
 #define SYSTICK_CONFIG_ARR_SIZE   1
 
 
-
-
 /******************************************
   GLOBAL FUNCTIONS MACROS
 *******************************************/
@@ -34,7 +32,7 @@
 
 /*
  * choose the following :
- * Clock_src              ->       1,2...
+ * Clock_src              ->       PIOSC_4,FCPU
  */
 typedef struct
 {

@@ -26,7 +26,7 @@
 */
 #define INTCTRL_GROUP_SUBGROUP_TYPE   INTCTRL_XXX 
 
-#define INTCTRL_CONFIG_ARR_SIZE    2
+#define INTCTRL_CONFIG_ARR_SIZE    1
 /******************************************
   GLOBAL FUNCTIONS MACROS
 *******************************************/
