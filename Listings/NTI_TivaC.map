@@ -644,11 +644,11 @@ Image Symbol Table
 
 Memory Map of the image
 
-  Image Entry point : 0x000002f1
+  Image Entry point : 0x0000026d
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00000c78, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000c78, Max: 0x00040000, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000c78, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000c78, Max: 0x00040000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -698,7 +698,7 @@ Memory Map of the image
     0x000002e4   0x000002e4   0x00000004   Code   RO          247    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
     0x000002e8   0x000002e8   0x00000006   Code   RO          248    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
     0x000002ee   0x000002ee   0x00000002   PAD
-    0x000002f0   0x000002f0   0x00000114   Code   RO          140  * .text               startup_tm4c123.o
+    0x000002f0   0x000002f0   0x00000114   Code   RO          140    .text               startup_tm4c123.o
     0x00000404   0x00000404   0x00000006   Code   RO          165    .text               c_w.l(heapauxi.o)
     0x0000040a   0x0000040a   0x0000004a   Code   RO          185    .text               c_w.l(sys_stackheap_outer.o)
     0x00000454   0x00000454   0x00000012   Code   RO          187    .text               c_w.l(exit.o)
@@ -729,12 +729,7 @@ Memory Map of the image
     0x00000c68   0x00000c68   0x00000010   Data   RO          329    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x00000c78, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
-
-    **** No section assigned to this execution region ****
-
-
-    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x00000c78, Size: 0x00000268, Max: 0xffffffff, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00000c78, Size: 0x00000268, Max: 0x00008000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
